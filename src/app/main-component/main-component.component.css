@@ -1,0 +1,50 @@
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    font-family: "Arial", sans-serif;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+}
+
+.menus h1 {
+    margin: 0px;
+    padding: 11px;
+    font-size: 16px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+app-menu {
+  width: 70%;
+  
+}
+
+.menus a {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.menus a.active::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.menu-links {
+  border: 1px solid black;
+  
+  height: 100dvh;
+}

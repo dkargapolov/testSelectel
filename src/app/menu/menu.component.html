@@ -1,0 +1,18 @@
+<div class="block">
+    <div class="metrics">
+        <h1>Общее значение: {{ count }}</h1>
+        <h1>Выбрано пунктов: {{ pressed }}</h1>
+    </div>
+
+    <ul>
+    <li *ngFor="let check of checks()">
+        <label>
+        <input type="checkbox" (change)="checkPressed(check)">
+        <div>
+            <p>Item {{ check.id }} </p>
+            <p>Value: {{ check.value }}</p>
+        </div>
+        </label>
+    </li>
+    </ul>
+</div>

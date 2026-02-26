@@ -1,0 +1,36 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.metrics {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.metrics h1 {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  height: 100dvh;
+  list-style: none;
+  background: rgb(218, 218, 218);
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+label {
+  display: flex;
+  align-items: baseline; /* вертикальное выравнивание */
+  gap: 10px; 
+  margin: 10px; /* расстояние между элементами */
+  cursor: pointer;
+}

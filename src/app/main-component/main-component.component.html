@@ -1,0 +1,21 @@
+<div class="main">
+  <div class="menus">
+    <h1>Раздел: {{ menuTitle }}</h1>
+    <div class="menu-links">
+      <a
+        (click)="openMenu('menu1')"
+        [class.active]="activeMenu === 'menu1'">
+        Тип 1
+      </a>
+
+      <a
+        (click)="openMenu('menu2')"
+        [class.active]="activeMenu === 'menu2'">
+        Тип 2
+      </a>
+    </div>
+  </div>
+
+  <app-menu [hidden]="activeMenu === 'menu1'"></app-menu>
+  <app-menu [hidden]="activeMenu === 'menu2'"></app-menu>
+</div>
